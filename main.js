@@ -1,15 +1,14 @@
 
-var miLista = document.getElementsByTagName("li");
+var myNodelist = document.getElementsByTagName("li");
 var i;
-for (i = 0; i < miLista.length; i++) {
+for (i = 0; i < myNodelist.length; i++) {
   var span = document.createElement("span");
   var txt = document.createTextNode("\u00D7");
   span.className = "close";
   span.appendChild(txt);
-  miLista[i].appendChild(span);
+  myNodelist[i].appendChild(span);
 }
 
-// Click para borrar
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
@@ -19,21 +18,19 @@ for (i = 0; i < close.length; i++) {
   }
 }
 
-
-// agregar a lista
-function nuevaTarea() {
+function nuevoElemento() {
   var li = document.createElement("li");
-  var inputValue = document.getElementById("miInput").value;
+  var inputValue = document.getElementById("input").value;
   var t = document.createTextNode(inputValue);
   li.appendChild(t);
   if (inputValue === '') {
-    alert("¡escribe algo!");
+    alert("¡no has escrito nada!");
   } else {
-    document.getElementById("miLista").appendChild(li);
+    document.getElementById("lista").appendChild(li);
   }
-  document.getElementById("miInput").value = "";
+  document.getElementById("input").value = "";
 
-  var span = document.createElement(span);
+  var span = document.createElement("span");
   var txt = document.createTextNode("\u00D7");
   span.className = "close";
   span.appendChild(txt);
