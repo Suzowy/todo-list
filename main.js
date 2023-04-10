@@ -1,8 +1,8 @@
-// boton x
-var miLista = document.getElementsByTagName("LI");
+
+var miLista = document.getElementsByTagName("li");
 var i;
 for (i = 0; i < miLista.length; i++) {
-  var span = document.createElement("SPAN");
+  var span = document.createElement("span");
   var txt = document.createTextNode("\u00D7");
   span.className = "close";
   span.appendChild(txt);
@@ -33,7 +33,7 @@ function nuevaTarea() {
   }
   document.getElementById("miInput").value = "";
 
-  var span = document.createElement("SPAN");
+  var span = document.createElement(span);
   var txt = document.createTextNode("\u00D7");
   span.className = "close";
   span.appendChild(txt);

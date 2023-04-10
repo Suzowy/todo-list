@@ -1,41 +1,40 @@
-
-h1{
+h1 {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     background-color: rgb(87, 87, 87);
     color: rgba(252, 98, 228, 1);
 }
-img{
-   width: 100%;
-   height: 300px;
+
+img {
+    width: 100%;
+    height: 300px;
 }
+
 ul {
-    position: relative;
+    justify-content: space-around;
+    position: absolute;
     padding: 12px 8px 12px 40px;
     background: #b4f3d5;
-    font-size: 18px;
-   
+    margin-block-end: 10px;
 }
 
 .close {
     position: absolute;
     right: 0;
     top: 0;
-    padding: 12px 16px 12px 16px;
-    background-color: rgb(223, 16, 43);
+    background-color: rgb(250, 47, 95);
+
 }
 
 .cabecera {
-    background-color: rgba(239, 232,234, 1);
-    /*padding: 30px 40px;*/
+    background-color: rgba(239, 232, 234, 1);
     text-align: center;
 }
 
 input {
-    margin: 0;
-    border: none;
-    border-radius: 2px;
-    width: 75%;
+    /*margin: 0;*/
+    border-radius: 7px;
+    width: 50%;
     padding: 10px;
     font-size: 16px;
     background-color: rgb(182, 254, 238);
@@ -43,11 +42,18 @@ input {
 
 .addBoton {
     padding: 10px;
-    width: 25%;
-    background: #ffffff;
+    width: 15%;
+    
     color: #5e0b84;
     text-align: center;
     font-size: 17px;
-    border-radius: 20px;
+    border-radius: 7px;
     background-color: rgb(210, 162, 254);
+}
+
+@media (max-width: 600px) {
+    .addBoton {
+        /*display: inline-flex;
+
+    }
 }
