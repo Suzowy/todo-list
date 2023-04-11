@@ -19,6 +19,7 @@ ul li {
     background: #b0edcf;
     font-size: 18px;
     font-family: cursive;
+    border-radius: 10px;
     
 
 }
@@ -27,10 +28,12 @@ ul li {
     position: absolute;
     right: 0;
     top: 0;
-    padding: 12px 16px 12px 16px;
+   padding: 10px 10px;
     background-color: rgba(186, 16,16, 1);
+    border-radius: 10px;
     font-size: larger;
     font-family: cursive;
+
   
 }
 
